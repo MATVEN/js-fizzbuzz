@@ -1,19 +1,19 @@
 // variabili
 var maxNumber = 100;
-var stamp = document.getElementById('box')
+
 // ciclo
 for (var i = 1; i <= maxNumber; i++) {
+  var stamp = document.getElementById('box');
   if (i % 3 === 0 && i % 5 === 0) {
-    stamp.innertHTML += 'FizzBuzz';
-
+    stamp.innerHTML += 'FizzBuzz';
  }
   else if (i % 3 === 0) {
-    stamp.innertHTML +='Fizz';
+    stamp.innerHTML += 'Fizz';
  }
   else if (i % 5 === 0) {
-    stamp.innertHTML +='Buzz';
+    stamp.innerHTML += 'Buzz';
  }
   else {
-      stamp.innertHTML += i;
+    stamp.innerHTML += i;
  }
 }
